@@ -1,0 +1,227 @@
+body {
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    margin-top: 0;
+  }
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;  
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.burger {
+    width: 0;
+    height: 0;
+    display: none;
+    background-image: url(burger.png);
+    overflow: hidden;
+}
+
+.button {
+    display: inline;
+    background-color: #EA6D27;
+    border-radius: 10px 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    margin: 0;
+    box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.toplogo {
+    display: block;
+    background-image: url(logo.png);
+    width: 120px;
+    height: 40px;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.cor1 {
+    width: 100%;
+    height: fit-content;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.licont {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 60px;
+}
+
+.mainblock1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+
+.slogo {
+    width: auto;
+}
+
+.mainleft {
+    width: 40%;
+    height: fit-content;
+}
+
+.mainright {
+    width: 40%;
+    height: 600px;
+    background-image: url(mainpic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 60px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.butcontainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.butcontainer1 {
+    width: fit-content;
+    height: 50px;
+    position: relative;
+    top: 15px;
+}
+
+.Sico {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.socialico {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+@media (max-width:1235px){
+    .slogo {
+        width: 80%;
+    }
+    .mainright {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:980px) {
+    .mainblock1 {
+        flex-direction: column-reverse;
+    }
+
+    .mainleft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slogo {
+        text-align: center;
+    }
+    .text {
+        max-width: 600px;
+        text-align: center;
+    }
+    .mainright {
+        width: 100%;
+        height: 400px;
+        margin-right: 70px;
+        margin-top: 20px;
+    }
+}
+
+.rightcont {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width:830px) {
+    .licont {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        display: none;
+    }
+    .burger {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        background-image: url(burger.png);
+        background-size: contain;
+        background-position: center;
+    }
+}
